@@ -1,6 +1,17 @@
-const message = 'hello node';
-const sum = 5+3
-var commandLineArgs = process.argv;
-console.log(commandLineArgs);
-console.log(message);
-console.log(sum)
+// const message = 'About Me';
+// message = 'This is where I write a very profound fact about myself!!'
+// const sum =  4 + 9;
+// sum += 6;
+
+
+const animalArray = ['dog', 'cat', 'pig'];
+
+animalArray.push('cow');
+
+const personObj = {
+  name: 'Allen McBroom Bey',
+  age: 38
+};
+
+personObj.age = 100;
+personObj.occupation = 'Developer
