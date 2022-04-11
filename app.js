@@ -1,17 +1,15 @@
-// const message = 'About Me';
-// message = 'This is where I write a very profound fact about myself!!'
-// const sum =  4 + 9;
-// sum += 6;
+const profileDataArgs = process.argv.slice(2);
 
+const printProfileData = profileDataArr => {
+  // This...
+  for (let i = 0; i < profileDataArr.length; i += 1) {
+    console.log(profileDataArr[i]);
+  }
 
-const animalArray = ['dog', 'cat', 'pig'];
+  console.log('================');
 
-animalArray.push('cow');
-
-const personObj = {
-  name: 'Allen McBroom Bey',
-  age: 38
+  // Is the same as this...
+  profileDataArr.forEach(profileItem => console.log(profileItem));
 };
 
-personObj.age = 100;
-personObj.occupation = 'Developer
+printProfileData(profileDataArgs);
